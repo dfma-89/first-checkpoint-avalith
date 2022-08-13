@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First Challenge Avalith</title>
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <link href="stylesform.css" rel="stylesheet" type="text/css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <span class="nav-bar" id="botonMenu"> <i class="fa-solid fa-square-caret-down"></i> Menú </span>
+  <nav class="main-nav">
+    <ul class="menu" id="menu">
+      <li class="menu-item"> <a href="index.html" class="menu-link">Inicio</a></li>
+      <li class="menu-item container-submenu"> 
+        <a href="#" class="menu-link submenu-boton"> Opciones <i class="fa-solid fa-square-caret-down"></i> </a>
+        <ul class="submenu">
+          <li class="menu-item"> <a href="Formulario.html" class="menu-link">Formulario</a> </li>
+          <li class="menu-item"> <a href="usuarios.html" class="menu-link">Usuarios</a> </li>
+          <li class="menu-item"> <a href="Rick&MortiCards.html" class="menu-link">Rick & Mortis Cards</a> </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <form class="my-form">
+    <div class="container">
+      <h1>Formulario</h1>
+      <ul>
+        <li>
+            <div class="grid grid-2">
+                <input type="text" placeholder="Nombre" required>  
+                <input type="text" placeholder="Apellido" required>
+              </div>
+        </li>    
+        <li>
+            <div class="grid grid-2">
+                <input type="email" placeholder="Correo electrónico" required>  
+                <input type="tel" placeholder="Teléfono/Celular">
+              </div>
+        </li>    
+        <li>
+            <textarea placeholder="Escribe tus comentarios"></textarea>
+        </li>    
+        <li>
+            <div class="grid grid-3">
+                <div class="required-msg">Obligatorio</div>
+                <button class="btn-grid" type="submit" enable>
+                  <span class="back">
+                    <img src="IMG_SRC" alt="">
+                  </span>
+                  <span class="front">ENVIAR</span>
+                </button>
+                <button class="btn-grid" type="reset" enable>
+                  <span class="back">
+                    <img src="IMG_SRC" alt="">
+                  </span>
+                  <span class="front">BORRAR</span>
+                </button> 
+              </div>
+        </li>
+      </ul>
+    </div>
+  </form>
+
+
+</body>
+
+<script src="menu.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</html>
