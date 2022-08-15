@@ -19,3 +19,11 @@ for (let i=0; i<subMenuBtn.length; i++) {
         }
     });
 }
+
+function valida_nombre(){
+    if (document.form-events.Nombre.valuelenght==0){
+        alert ("Tiene que escribir su nombre")
+        document.form-events.Nombre.focus()
+        return 0;
+    }
+}

@@ -28,14 +28,14 @@
     </ul>
   </nav>
 
-  <form class="my-form">
+  <form class="my-form" id="form-events">
     <div class="container">
-      <h1>Formulario</h1>
+      <h1>Envia tus comentarios</h1>
       <ul>
         <li>
             <div class="grid grid-2">
-                <input type="text" placeholder="Nombre" required>  
-                <input type="text" placeholder="Apellido" required>
+                <input type="text" placeholder="Nombre" pattern="[a-z]" size="30" minlength="3" maxlenghth="100" required>  
+                <input type="text" placeholder="Apellido" pattern="[a-z]" size="30" minlength="5" maxlenght="200" required>
               </div>
         </li>    
         <li>
